@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 //modules
 import { PagesModule } from './pages/pages.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -16,7 +17,8 @@ import { PagesModule } from './pages/pages.module';
   imports: [
     BrowserModule,
     PagesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
