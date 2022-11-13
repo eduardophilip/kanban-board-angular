@@ -9,10 +9,6 @@ import { Iboard } from 'src/app/interfaces/Iboard';
 })
 export class BoardComponent implements OnInit {
 
-  // @Input('board') set data(value: Iboard){
-  //   this.board = value
-  // };
-
   @Input() board: Iboard
 
   constructor() { }
