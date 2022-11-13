@@ -6,6 +6,23 @@
                 <h1 class="app-name has-gradient">Kanban</h1>
             </div>
         </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Board list
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a 
+                            class="navbar-item" 
+                            *ngFor="let board of boards;let i = index"
+                            (click)="showBoard(board)">
+                            {{board.name}}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <!-- Pass the board by route -->

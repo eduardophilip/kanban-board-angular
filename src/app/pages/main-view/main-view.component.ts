@@ -12,11 +12,16 @@ import { boradTest } from 'src/app/services/mock-board';
 export class MainViewComponent implements OnInit {
 
   public boards: Iboard[] = boradTest
-  public board: Iboard = this.boards[0]
+  public board: Iboard;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.board = this.boards[0]
+  }
+
+  showBoard(board: Iboard) {
+    this.board = board
   }
 
 }
